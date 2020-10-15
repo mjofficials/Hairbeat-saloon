@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  position: absolute;
+  width: 252px;
+  height: 52px;
+  left: 16px;
+  top: 27px;
+}
