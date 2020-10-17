@@ -96,7 +96,7 @@ function resetTimer() {
     // stop timer 
     clearInterval(timer);
     // then started again timer
-    timer = setInterval(autoPlay, 4000);
+    timer = setInterval(autoPlay, 8000);
 }
 
 
@@ -123,3 +123,4 @@ var swiper = new Swiper('.swiper-container', {
         clickable: true,
     },
 });
+
