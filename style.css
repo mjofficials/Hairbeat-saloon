@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 html,
 body {
@@ -315,11 +316,10 @@ a {
   width: 100%;
   height: auto;
   padding: 25px;
-  border: 3px solid #ff5722;
 }
 .section-title {
   text-align: center;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 35px;
   padding: 15px;
   position: relative;
@@ -359,7 +359,6 @@ a {
 
 .product-slider {
   padding: 25px;
-  border: 3px solid #ff5722;
 }
 .product-slider > h2 {
   margin: 0;
@@ -401,7 +400,6 @@ a {
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   padding: 0 10px;
-  border: 3px solid #ff5722;
 }
 
 .gallery-title {
@@ -443,7 +441,6 @@ a {
 #slider-container {
   display: flex;
   flex-wrap: wrap;
-  border: 3px solid #ff5722;
 }
 
 blockquote > p {
@@ -616,7 +613,6 @@ address {
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
-  border: 0.2rem solid #ff5722;
 }
 .map-responsive iframe {
   left: 0;
@@ -647,16 +643,85 @@ address {
 .contact-box button {
   width: 145.06px;
   height: 46.59px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 1rem;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.05em;
+  background-color: #000;
+  color: #fff;
 }
 
 .opening-hours-box p {
   text-align: center;
 }
+
+/* NEWSLETTER SECTION */
+
+.newsletter-section {
+  width: 100%;
+  padding: 45px 0 35px;
+  background-color: rgb(168, 166, 166);
+}
+
+.temp-title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+}
+
+.newsletter-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .newsletter-content > input[type="text"] {
+  width: 75%;
+  padding: 1em;
+  border: 2px solid #000;
+  color: #000;
+  font-weight: 800;
+  font-style: normal;
+} */
+
+.newsletter-content > label,
+input {
+  display: block;
+  width: 247px;
+  height: 2.5em;
+}
+
+label > input {
+  border: 2px solid #000;
+}
+
+label {
+  margin: 1em 0 1em 0;
+}
+
+.newsletter-btn {
+  width: 247px;
+  height: 67px;
+  margin: 2rem 0 0 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  background-color: #000;
+  color: #fff;
+}
+
+/* FOOTER SECTION */
+
+.footer-section > footer {
+  background-color: #000000;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  padding: 15px 0 15px;
+}
+
+/* padding: 25px 0 0 25px; */
