@@ -105,10 +105,7 @@ function autoPlay() {
     updateCircleIndicator();
 }
 
-let timer = setInterval(autoPlay, 8000);
-
-
-
+let timer = setInterval(autoPlay, 5000);
 
 
 // SWIPER FUNCTION
