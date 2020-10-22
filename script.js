@@ -110,8 +110,10 @@ let timer = setInterval(autoPlay, 5000);
 
 // SWIPER FUNCTION
 var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 2,
+    slidesPerView: 3,
     spaceBetween: 40,
+    autoHeight: true,
+    updateOnWindowResize: true,
     centeredSlides: true,
     grabCursor: true,
     loop: true,
@@ -119,5 +121,15 @@ var swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
         clickable: true,
     },
+    breakpoints: {
+        425: {
+            slidesPerView: 3,
+            spaceBetween: 35,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 65,
+        }
+    }
 });
 
