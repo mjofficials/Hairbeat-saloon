@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
 html,
 body {
   margin: 0;
@@ -16,8 +13,11 @@ body {
 
 a {
   color: #000;
+  text-decoration: none;
 }
-
+p {
+  font-family: "Sintony", sans-serif;
+}
 /* header */
 
 .header {
@@ -25,10 +25,13 @@ a {
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
+  height: 13%;
   z-index: 3;
 }
 
 .header ul {
+  position: relative;
+  top: -20px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -42,6 +45,9 @@ a {
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
   text-align: center;
+  text-transform: uppercase;
+  font-family: "Sintony", sans-serif;
+  font-weight: 500;
 }
 
 .header li a:hover,
@@ -52,12 +58,13 @@ a {
 .header .logo {
   display: block;
   float: left;
-  padding: 10px;
+  width: 10em;
+  padding: 20px 10px 10px 10px;
   text-decoration: none;
 }
 
 .logo-img {
-  width: 50%;
+  max-width: 100%;
   position: relative;
 }
 
@@ -115,7 +122,7 @@ a {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 340px;
+  max-height: 380px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -148,6 +155,8 @@ a {
     clear: none;
     float: right;
     max-height: none;
+    position: relative;
+    top: 10px;
   }
   .header .menu-icon {
     display: none;
@@ -197,20 +206,25 @@ a {
 .home .caption {
   width: 50%;
 }
-.home .caption h1 {
-  font-size: 42px;
+.home .caption h2 {
+  font-size: 40px;
+  line-height: 38px;
+  letter-spacing: 5px;
+  font-family: "Josefin Sans", sans-serif;
   color: #fff;
   margin: 0;
 }
-.home .slide.active .caption h1 {
+.home .slide.active .caption h2 {
   opacity: 0;
   animation: captionText 0.5s ease forwards;
   animation-delay: 1s;
 }
 .home .caption p {
-  font-size: 18px;
+  font-size: 1.3em;
+  font-family: "Dancing Script", cursive;
   margin: 15px 0 30px;
-  color: #cfc9b7;
+  color: #000000;
+  letter-spacing: 2px;
 }
 .home .slide.active .caption p {
   opacity: 0;
@@ -218,15 +232,16 @@ a {
   animation-delay: 1.2s;
 }
 .home .caption a {
-  display: inline-block;
-  padding: 15px;
+  display: inline-flex;
+  width: 13rem;
+  padding: 10px;
   background-color: #000000;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-family: "Sintony", sans-serif;
+  font-size: 1rem;
   line-height: 25px;
   color: #fff;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
 }
 
 .home .caption a span {
@@ -260,7 +275,7 @@ a {
   width: 40px;
   margin-top: -20px;
   color: #ffffff;
-  background-color: #ff5722;
+  background-color: #000000;
   text-align: center;
   line-height: 40px;
   font-size: 20px;
@@ -269,7 +284,7 @@ a {
 }
 .home .controls .prev:hover,
 .home .controls .next:hover {
-  background-color: #000000;
+  background-color: #ff5722;
 }
 .home .controls .prev {
   left: 0;
@@ -284,6 +299,7 @@ a {
   bottom: 30px;
   z-index: 2;
   transform: translateX(-50%);
+  cursor: pointer;
 }
 
 .home .indicator div {
@@ -302,25 +318,19 @@ a {
   background-color: #ff5722;
 }
 
-/*responsive*/
-@media (max-width: 767px) {
-  .controls {
-    display: none;
-  }
-}
-
 /* ABOUT SECTION */
 
 .about-container {
   position: relative;
   width: 100%;
   height: auto;
-  padding: 25px;
+  padding: 50px;
 }
 .section-title {
   text-align: center;
   text-decoration: none !important;
   font-size: 35px;
+  font-family: "Josefin Sans", sans-serif;
   padding: 15px;
   position: relative;
 }
@@ -330,9 +340,15 @@ a {
   flex-direction: column;
 }
 
+.about-info span:last-child {
+  display: flex;
+  float: right;
+  padding: 1.5rem 3.125rem 0 0;
+}
+
 .quote-container > blockquote {
   font-size: 25px;
-  padding: 0;
+  font-family: "Dancing Script", cursive;
   margin: 0 0 0 25px;
   line-height: 2rem;
 }
@@ -340,15 +356,12 @@ a {
   font-size: 35px;
 }
 
-.quote-container > span:nth-child(3) {
-  display: flex;
-  float: right;
-}
-
 .about-content {
   padding: 1rem;
   line-height: 2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.03rem;
+  text-align: justify;
+  font-family: "Sintony", sans-serif;
 }
 .about-img {
   max-width: 100%;
@@ -358,12 +371,14 @@ a {
 /* PRODUCT SLIDER SECTION */
 
 .product-slider {
-  padding: 25px;
+  padding: 50px;
 }
+
 .product-slider > h2 {
   margin: 0;
   padding-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-family: "Sintony", sans-serif;
 }
 .swiper-container {
   height: 250px;
@@ -377,8 +392,9 @@ a {
 }
 
 .swiper-slide img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  margin-top: 2rem;
   border-radius: 7px;
 }
 
@@ -387,30 +403,39 @@ a {
   transition: 0.4s;
 }
 
+.product-title {
+  width: 50%;
+}
+
 .product-title > h5 {
   position: relative;
   top: -15px;
+  font-family: "Dancing Script", cursive;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
 }
 
 /* GALLERY SECTION */
 
+.gallery-section {
+  padding: 0 50px 50px;
+}
+
 .gallery-row {
-  display: -ms-flexbox; /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   padding: 0 10px;
 }
 
 .gallery-title {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .gallery-column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 10px;
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 5px;
 }
 
 .gallery-column img {
@@ -419,44 +444,40 @@ a {
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+@media (min-width: 62em) {
   .gallery-column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 5px;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .gallery-column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
 /* TESTIMONIALS SECTION */
+
+.testimonial-section-title {
+  height: 50px;
+}
 
 #slider-container {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 1.5rem;
 }
 
 blockquote > p {
   font-size: 1em;
   font-family: "Roboto", sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
   text-align: center;
-  padding: 1em;
 }
+
 #testimonials {
   position: relative;
   justify-content: center;
   margin: 0 auto;
   overflow: hidden;
   width: 75%;
-  height: 350px;
+  height: 14em;
 }
 
 figure {
@@ -469,6 +490,7 @@ figure {
 }
 
 .single-testimonial > blockquote {
+  border: 2px dashed #ff5722;
   width: 25%;
   margin: 0;
   float: left;
@@ -478,6 +500,18 @@ figure {
 blockquote > p {
   font-size: 1.5rem;
 }
+
+blockquote > p,
+blockquote > footer {
+  padding-right: 0.8rem;
+}
+
+blockquote > footer {
+  float: right;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+}
+
 @-webkit-keyframes slider {
   0% {
     transform: translateX(0%);
@@ -526,9 +560,9 @@ blockquote > p {
   }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 43em) {
   #testimonials {
-    height: 400px;
+    height: 10em;
   }
 }
 
@@ -622,13 +656,6 @@ address {
   position: absolute;
 }
 
-.contact-box {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-}
-
 .contact-box p {
   text-align: center;
 }
@@ -657,6 +684,11 @@ address {
 }
 
 /* NEWSLETTER SECTION */
+@media (max-width: 48em) {
+  .temp-img-container {
+    display: none;
+  }
+}
 
 .newsletter-section {
   width: 100%;
