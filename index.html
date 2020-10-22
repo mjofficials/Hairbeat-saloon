@@ -7,8 +7,10 @@
 
   <title>Hairbeat || Saloon</title>
 
-  <!-- SWIPER CDN -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- GOOGLE FONTS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Josefin+Sans:wght@500&family=Sintony&display=swap"
+    rel="stylesheet">
 
   <!-- ANIMATE CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -16,8 +18,14 @@
   <!-- FONT AWESOME CDN -->
   <script src="https://kit.fontawesome.com/57485fc5d2.js" crossorigin="anonymous"></script>
 
+  <!-- RESPONSIVE CSS -->
+  <link rel="stylesheet" href="responsive.css">
+
   <!-- CUSTOM CSS LINK -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- SWIPER CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 </head>
 
@@ -46,28 +54,28 @@
 
   <section class="home">
     <div class="home-slider">
-      <div class="slide active" style="background-image: url('slider-images/slide-1.jpg')">
+      <div class="slide active" style="background-image: url('slider-images/new-slider-img-1.jpg')">
         <div class="container">
           <div class="caption">
-            <h1>Our hairstyles enhances your smile.</h1>
+            <h2>Our hairstyles enhances your smile.</h2>
             <p>Old school barbershop for the modern man.</p>
             <a href=""> <span>&nbsp Make an &nbsp</span> appointment</a>
           </div>
         </div>
       </div>
-      <div class="slide" style="background-image: url('slider-images/slide-2.jpg')">
+      <div class="slide" style="background-image: url('slider-images/new-slider-img-2.jpg')">
         <div class="container">
           <div class="caption">
-            <h1>It’s more than a haircut.</h1>
+            <h2>It’s more than a haircut.</h2>
             <p>Remember… it’s not just a haircut, it’s an experience.</p>
             <a href=""> <span>&nbsp Make an &nbsp</span> appointment</a>
           </div>
         </div>
       </div>
-      <div class="slide" style="background-image: url('slider-images/slide-3.png')">
+      <div class="slide" style="background-image: url('slider-images/new-slider-img-3.jpg')">
         <div class="container">
           <div class="caption">
-            <h1>Let’s talk about hair.</h1>
+            <h2>Let’s talk about hair.</h2>
             <p>Where you will find the cut you are looking for!</p>
             <a href=""> <span>&nbsp Make an &nbsp</span> appointment</a>
           </div>
@@ -92,31 +100,35 @@
   <!-- ABOTUT SECTION -->
   <section id="about" class="about-container">
     <div class="section-title"><a href="#about">About us</a></div>
-    <main class="about-info">
-      <p>HAIRBEAT beauty salon</p>
-      <div class="quote-container">
-        <span><b>"</b></span>
-        <blockquote>
-          <b>Step up your healthy hair care routine with tips and tricks</b>
-        </blockquote>
-        <span><b>"</b></span>
+    <main class="about-main">
+      <div class="about-info">
+        <div class="quote-container">
+          <p>HAIRBEAT beauty salon</p>
+          <span><b>"</b></span>
+          <blockquote>
+            <b>Step up your healthy hair care routine with tips and tricks</b>
+          </blockquote>
+          <span><b>"</b></span>
+        </div>
+        <div class="about-content">
+          HAIRBEAT beauty salon in Erode is one of the leading businesses in the
+          Salons. We are empowering and developing in the industry and we know
+          exactly how to make your first impressions count. One of the first
+          things that people notice when they meet you is your hairstyle. Make
+          sure you leave a great first impression!
+        </div>
       </div>
-      </div>
-      <div class="about-content">
-        HAIRBEAT beauty salon in Erode is one of the leading businesses in the
-        Salons. We are empowering and developing in the industry and we know
-        exactly how to make your first impressions count. One of the first
-        things that people notice when they meet you is your hairstyle. Make
-        sure you leave a great first impression!
-      </div>
-      <img class="about-img" src="slider-images/slide-3.png" alt="" />
+      <aside>
+        <img class="about-img" src="slider-images/slide-3.png" alt="" />
+      </aside>
     </main>
+
   </section>
   <!-- ABOTUT SECTION end -->
 
   <!-- PRODUCT SLIDER SECTION -->
   <section class="product-slider">
-    <h2 class="animate__animated animate__bounce">Discover what we do.</h2>
+    <h2 class="">Discover what we do.</h2>
     <!-- Swiper -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
@@ -140,7 +152,7 @@
         </div>
       </div>
       <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination "></div>
     </div>
   </section>
   <!-- PRODUCT SLIDER SECTION end-->
@@ -159,7 +171,7 @@
 
   <!-- TESTIMONIALS SECTION -->
   <section id="testimonial" class="testimonial-section">
-    <div class="section-title"><a href="#testimonial">Testimonial</a></div>
+    <div class="section-title testimonial-section-title"><a href="#testimonial">Testimonial</a></div>
     <section id="slider-container">
       <div id="testimonials">
         <figure class="single-testimonial">
@@ -181,7 +193,6 @@
       </div>
     </section>
   </section>
-
 
   <!-- PRICING SECTION -->
 
@@ -295,6 +306,11 @@
 
   <!-- NEWSLETTER SECTION -->
   <section id="newsletter" class="newsletter-section">
+    <main class="temp-img-container">
+      <img
+        src="https://images.unsplash.com/photo-1573588546512-2ace898aa480?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+        alt="">
+    </main>
     <div class="section-title temp-title"><a href="#about">Make an appointment</a></div>
     <form class="newsletter-content">
       <label>Name
