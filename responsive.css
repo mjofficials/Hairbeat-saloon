@@ -1,0 +1,48 @@
+/* HOME SECTION */
+@media (min-width: 43em) {
+  .container {
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 43em) {
+  .controls {
+    display: none;
+  }
+}
+
+/* ABOUT SECTION */
+
+/* 43em = 688px */
+@media (min-width: 43em) {
+  .about-main {
+    display: flex;
+  }
+  .about-info {
+    flex: 1 0 50%;
+  }
+  .about-content,
+  .quote-container {
+    width: 75%;
+  }
+  .about-main aside {
+    flex: 1 20rem;
+    align-self: center;
+  }
+}
+
+/* 62em = 992px */
+@media (min-width: 62em) {
+}
+
+/* 82em = 1312px */
+@media (min-width: 82em) {
+}
+
+/* PRODUCT SECTION */
+/* Product slider Media quries on JS file */
+
+/* GALLERY SECTION */
+/* media queries on CSS file */
+
+/* TESTIMONIALS SECTION */
