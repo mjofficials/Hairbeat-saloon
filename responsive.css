@@ -46,3 +46,62 @@
 /* media queries on CSS file */
 
 /* TESTIMONIALS SECTION */
+
+/* PRICING SECTION */
+
+@media (min-width: 43em) {
+  .pricing-section {
+    margin-top: 25px;
+  }
+
+  .pricing-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .price-1,
+  .price-2,
+  .price-3 {
+    flex: 1 1 50%;
+    padding: 0 25px 0;
+  }
+
+  .price-1 h2,
+  .price-2 h2,
+  .price-3 h2 {
+    font-size: 20px;
+    font-family: "Sintony", sans-serif;
+  }
+}
+
+/* CONTACT SECTION */
+@media (min-width: 43em) {
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: inherit;
+  }
+  .contact-logo-content {
+    flex: 0 0 25%;
+  }
+  .map-responsive {
+    flex: 0 0 25%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  /* .mobile-map {
+    display: none;
+  }
+  .desktop-map {
+    display: flex;
+  } */
+}

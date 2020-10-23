@@ -490,7 +490,7 @@ figure {
 }
 
 .single-testimonial > blockquote {
-  border: 2px dashed #ff5722;
+  /* border: 2px dashed #ff5722; */
   width: 25%;
   margin: 0;
   float: left;
@@ -570,7 +570,13 @@ blockquote > footer {
 .pricing-container {
   width: 100%;
   height: auto;
-  padding: 45px;
+  padding: 25px 50px 50px;
+}
+
+.price-1,
+.price-2,
+.price-3 {
+  /* border: 2px dashed #ff5722; */
 }
 
 .price-1 {
@@ -590,6 +596,8 @@ blockquote > footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.3rem;
 }
 
 .price-box > p:nth-of-type(1) {
@@ -609,10 +617,12 @@ blockquote > footer {
 .contact-container {
   width: 100%;
   height: auto;
-  padding: 45px;
+  padding: 50px;
+  border: 2px solid #ff5722;
 }
 
 .contact-logo {
+  max-width: 50%;
   position: relative;
   left: 25%;
 }
@@ -655,6 +665,10 @@ address {
   width: 100%;
   position: absolute;
 }
+/* 
+.desktop-map {
+  display: none;
+} */
 
 .contact-box p {
   text-align: center;
