@@ -82,26 +82,17 @@
     align-items: inherit;
   }
   .contact-logo-content {
-    flex: 0 0 25%;
+    flex: 0 0 35%;
   }
-  .map-responsive {
-    flex: 0 0 25%;
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
+  .address-box,
+  .contact-box {
+    flex: 0 0 20%;
   }
-  .map-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
+}
+
+/* NEWSLETTER SECTION */
+@media (min-width: 43em) {
+  .newsletter-main {
+    margin-top: 3rem;
   }
-  /* .mobile-map {
-    display: none;
-  }
-  .desktop-map {
-    display: flex;
-  } */
 }
