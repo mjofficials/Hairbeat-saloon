@@ -122,8 +122,15 @@ var swiper = new Swiper('.swiper-container', {
         clickable: true,
     },
     breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        320: {
+            slidesPerView: 1.5,
+
+        },
         425: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 35,
         },
         992: {
