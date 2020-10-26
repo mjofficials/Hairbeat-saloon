@@ -26,7 +26,11 @@ p {
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
+<<<<<<< HEAD
   height: 62px;
+=======
+  height: 70px;
+>>>>>>> 04c92430b7a660f03f396a2009bf020e89c0f917
   z-index: 3;
 }
 
@@ -60,7 +64,11 @@ p {
   display: block;
   float: left;
   width: 10em;
+<<<<<<< HEAD
   padding-top: 8px;
+=======
+  padding: 0;
+>>>>>>> 04c92430b7a660f03f396a2009bf020e89c0f917
   text-decoration: none;
 }
 
