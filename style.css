@@ -60,7 +60,7 @@ p {
   display: block;
   float: left;
   width: 10em;
-  padding: 8px;
+  padding: 0;
   text-decoration: none;
 }
 
