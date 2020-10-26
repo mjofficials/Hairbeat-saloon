@@ -26,7 +26,7 @@ p {
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
-  height: 13%;
+  height: 60px;
   z-index: 3;
 }
 
@@ -60,7 +60,7 @@ p {
   display: block;
   float: left;
   width: 10em;
-  padding: 18px 10px 10px 10px;
+  padding: 10px;
   text-decoration: none;
 }
 
@@ -86,7 +86,7 @@ p {
   padding: 28px 20px;
   position: relative;
   user-select: none;
-  margin-top: 0.8em;
+  margin-top: 0.1em;
 }
 
 .header .menu-icon .navicon {
@@ -149,6 +149,9 @@ p {
 /* 82em = 1312px */
 
 @media (min-width: 64em) {
+  .header {
+    height: 75px;
+  }
   .header li {
     float: left;
   }
@@ -425,6 +428,7 @@ p {
   font-size: 1.8rem;
   font-family: "Sintony", sans-serif;
 }
+
 .swiper-container {
   height: 250px;
 }
@@ -732,7 +736,6 @@ blockquote > footer {
 }
 
 address {
-  /* width: 33.33%; */
   line-height: 1.5em;
 }
 
@@ -786,7 +789,6 @@ address {
 
 .newsletter-section {
   width: 100%;
-  /* background-color: rgb(168, 166, 166); */
   padding: 25px;
 }
 
@@ -798,16 +800,12 @@ address {
 }
 
 .newsletter-main > img {
-  /* max-width: 25%; */
   width: 40%;
   height: 50%;
 }
 
 .newsletter-title {
   font-family: "Dancing Script", cursive;
-  /* font-style: normal;
-  font-weight: 800;
-  font-size: 30px; */
   text-align: center;
 }
 
@@ -817,7 +815,8 @@ address {
   align-items: center;
 }
 
-.newsletter-content input {
+.newsletter-content input,
+select {
   border: 2px solid #000;
   display: block;
   width: 247px;
@@ -830,13 +829,6 @@ address {
 }
 
 .newsletter-content > a {
-  /* width: 247px;
-  height: 67px;
-  margin: 2rem 0 0 0;
-  font-weight: 800;
-  font-size: 1.5em;
-  background-color: #000;
-  color: #fff; */
   display: inline-flex;
   margin-top: 1.5rem;
   width: 13rem;

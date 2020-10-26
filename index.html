@@ -33,7 +33,7 @@
 
   <!-- HEADER SECTION -->
   <header class="header">
-    <a href="" class="logo"><img class="logo-img" src="images/hb-logo_1.svg" alt="" /></a>
+    <a href="#home" class="logo"><img class="logo-img" src="images/hb-logo_1.svg" alt="" /></a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
@@ -82,10 +82,9 @@
 
     <!-- controls  -->
     <div class="controls">
-      <div class="prev"><b>
-          < </b>
+      <div class="prev"><b><i class="fas fa-chevron-left"></i></b>
       </div>
-      <div class="next"><b>></b></div>
+      <div class="next"><b><i class="fas fa-chevron-right"></i></b></div>
     </div>
 
     <!-- indicators -->
@@ -320,9 +319,15 @@
         <label>Your free time
           <input id="" name="Free time" type="text" placeholder="Free time">
         </label>
-        <label>Services
+        <select id="Services" name="Services">
+          <option value="services">Services</option>
+          <option value="hairstyles">Hairstyles</option>
+          <option value="beardtrimming">Beard Trimming</option>
+          <option value="facemasking">Face masking</option>
+        </select>
+        <!-- <label>Services
           <input id="" name="Services" type="text" placeholder="Services">
-        </label>
+        </label> -->
         <a href=""> <span>&nbsp Make an &nbsp</span> appointment</a>
       </form>
     </main>

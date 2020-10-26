@@ -14,10 +14,10 @@ menuLinks.forEach(item => {
 $('body').on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
     // Store hash
-    var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 0;
+    var targetOffset = $(this.hash).offset() ? $(this.hash).offset().top : 0;
     //change this number to create the additional off set        
     var customoffset = 74
-    $('html, body').animate({ scrollTop: target_offset - customoffset }, 80);
+    $('html, body').animate({ scrollTop: targetOffset - customoffset }, 80);
 });
 
 // HOME SLIDER FUNCTION
