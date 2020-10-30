@@ -146,3 +146,64 @@ var swiper = new Swiper('.swiper-container', {
     }
 });
 
+// FORM SECTION
+
+// Defining a function to display error message
+function printError(elemId, hintMsg) {
+    document.getElementById(elemId).innerHTML = hintMsg;
+}
+
+// Defining a function to validate form 
+document.getElementById("submit-btn").addEventListener('click', function validateForm(e) {
+    var name = document.getElementsByName("Name")[0].value;
+    var email = document.getElementsByName("Email")[0].value;
+    var mobile = document.getElementsByName("Mobile-no")[0].value;
+    var freetime = document.getElementsByName("Free-time")[0].value;
+    var services = document.getElementsByName("Services")[0].value;
+    // console.log(name);
+    e.preventDefault();
+
+    // Defining error variables with a default value
+    var nameErr = emailErr = mobileErr = countryErr = genderErr = true;
+
+
+    // Validate name
+    if (name == "") {
+        printError("nameErr", "Please enter your name");
+    } else {
+        var regex = /^[a-zA-Z\s]+$/;
+        if (regex.test(name) === false) {
+            printError("nameErr", "Please enter a valid name");
+        } else {
+            printError("nameErr", "");
+            nameErr = false;
+        }
+    }
+
+    // Validate email address
+    if (email == "") {
+        printError("emailErr", "Please enter your email address");
+    } else {
+        // Regular expression for basic email validation
+        var regex = /^\S+@\S+\.\S+$/;
+        if (regex.test(email) === false) {
+            printError("emailErr", "Please enter a valid email address");
+        } else {
+            printError("emailErr", "");
+            emailErr = false;
+        }
+    }
+
+    // Validate mobile number
+    if (mobile == "") {
+        printError("mobileErr", "Please enter your mobile number");
+    } else {
+        var regex = /^\d{10}$/;
+        if (regex.test(mobile) === false) {
+            printError("mobileErr", "Please enter a valid 10 digit mobile number");
+        } else {
+            printError("mobileErr", "");
+            mobileErr = false;
+        }
+    }
+})

@@ -305,24 +305,27 @@
       <img
         src="https://images.pexels.com/photos/1606573/pexels-photo-1606573.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         alt="">
-      <form class="newsletter-content">
-        <div class="section-title newsletter-title">
+      <form class="newsletter-content" onsubmit="return validateForm()">
+        <div class=" section-title newsletter-title">
           <a href="#newsletter">Make an Appointment</a>
         </div>
         <label class="floating-label-group">
           <input id="name" name="Name" type="text" placeholder=" " autocomplete="off" autofocus required>
           <p><span>Name</span></p>
+          <div class="error" id="nameErr"></div>
         </label>
         <label class="floating-label-group">
-          <input id="email" name="Email" type="text" placeholder=" ">
+          <input id="email" name="Email" type="text" placeholder=" " autocomplete="off" required>
           <p><span>Your Email</span></p>
+          <div class="error" id="emailErr"></div>
         </label>
         <label class="floating-label-group">
-          <input id="phone-no" name="Phone no" type="text" placeholder=" ">
-          <p><span>Your phone no</span></p>
+          <input id="phone-no" name="Mobile-no" type="text" placeholder=" " autocomplete="off" required>
+          <p><span>Your mobile no</span></p>
+          <div class="error" id="mobileErr"></div>
         </label>
         <label class="floating-label-group">
-          <input id="free-time" name="Free time" type="text" placeholder=" ">
+          <input id="free-time" name="Free-time" type="text" placeholder=" " autocomplete="off" required>
           <p><span>Your free time</span></p>
         </label>
         <select id="Services" name="Services">
@@ -331,7 +334,8 @@
           <option value="beardtrimming">Beard Trimming</option>
           <option value="facemasking">Face masking</option>
         </select>
-        <a href=""> <span>&nbsp Make an &nbsp</span> appointment</a>
+        <!-- <a href="" type="submit"> <span>&nbsp Make an &nbsp</span> appointment</a> -->
+        <input id="submit-btn" type="submit" value="Make an appointment" />
       </form>
     </main>
   </section>

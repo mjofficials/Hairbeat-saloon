@@ -19,6 +19,9 @@ a {
 p {
   font-family: "Sintony", sans-serif;
 }
+input::placeholder {
+  background-color: transparent;
+}
 /* header */
 
 .header {
@@ -822,7 +825,7 @@ address {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 26px 1px 30px #97a1a1, -60px -20px 60px #ffffff;
+  box-shadow: 26px 1px 30px #97a1a1, 11px -30px 60px #ffffff;
   border-radius: 0.6em;
 }
 
@@ -830,16 +833,13 @@ label {
   position: relative;
 }
 
-/* .newsletter-content p {
-  color: #dd4646;
-  font-size: 1rem;
-  user-select: none;
-  position: absolute;
-  top: 0;
-  margin-left: 2rem;
-  padding: 0 0.4rem;
-  background: #f4f4f4;
-} */
+.error {
+  color: red;
+  font-size: 90%;
+  position: relative;
+  top: -15px;
+  left: 5px;
+}
 
 label > input {
   font-family: "Open Sans", sans-serif;
@@ -869,7 +869,8 @@ label > p {
   transition: all 0.2s ease;
 }
 
-.floating-label-group > input:focus ~ p {
+.floating-label-group input:focus ~ p,
+.floating-label-group input:not(:focus):valid ~ p {
   top: -26px;
   bottom: 0px;
   left: 10px;
