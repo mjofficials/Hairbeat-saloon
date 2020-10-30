@@ -306,18 +306,24 @@
         src="https://images.pexels.com/photos/1606573/pexels-photo-1606573.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         alt="">
       <form class="newsletter-content">
-        <div class="section-title newsletter-title"><a href="#newsletter">Make an Appointment</a></div>
-        <label>Name
-          <input id="" name="Name" type="text" placeholder="Name">
+        <div class="section-title newsletter-title">
+          <a href="#newsletter">Make an Appointment</a>
+        </div>
+        <label class="floating-label-group">
+          <input id="name" name="Name" type="text" placeholder=" " autocomplete="off" autofocus required>
+          <p><span>Name</span></p>
         </label>
-        <label>Your Email
-          <input id="" name="Email" type="text" placeholder="Email">
+        <label class="floating-label-group">
+          <input id="email" name="Email" type="text" placeholder=" ">
+          <p><span>Your Email</span></p>
         </label>
-        <label>Your phone no
-          <input id="" name="Phone no" type="text" placeholder="Phone no">
+        <label class="floating-label-group">
+          <input id="phone-no" name="Phone no" type="text" placeholder=" ">
+          <p><span>Your phone no</span></p>
         </label>
-        <label>Your free time
-          <input id="" name="Free time" type="text" placeholder="Free time">
+        <label class="floating-label-group">
+          <input id="free-time" name="Free time" type="text" placeholder=" ">
+          <p><span>Your free time</span></p>
         </label>
         <select id="Services" name="Services">
           <option value="services">Services</option>
@@ -325,9 +331,6 @@
           <option value="beardtrimming">Beard Trimming</option>
           <option value="facemasking">Face masking</option>
         </select>
-        <!-- <label>Services
-          <input id="" name="Services" type="text" placeholder="Services">
-        </label> -->
         <a href=""> <span>&nbsp Make an &nbsp</span> appointment</a>
       </form>
     </main>
