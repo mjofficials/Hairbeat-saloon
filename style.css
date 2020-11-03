@@ -352,6 +352,7 @@ input::placeholder {
   width: 100%;
   height: auto;
   padding: 25px;
+  background-image: linear-gradient(135deg, #e3e3e3 10%, #f6f6f8 100%);
 }
 .section-title {
   text-align: center;
@@ -389,6 +390,8 @@ input::placeholder {
   letter-spacing: 0.03rem;
   text-align: justify;
   font-family: "Sintony", sans-serif;
+  background-image: linear-gradient(135deg, #fccf31 10%, #f55555 100%);
+  /* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
 }
 .about-img {
   max-width: 100%;
@@ -516,11 +519,6 @@ input::placeholder {
 }
 
 /* TESTIMONIALS SECTION */
-/* .testimonial-section {
-  background-image: url("slider-images/new-slider-img-1.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-} */
 .testimonial-section-title {
   height: 50px;
 }
@@ -636,6 +634,24 @@ blockquote > footer {
   width: 100%;
   height: auto;
   padding: 25px 25px 50px;
+  color: #fff;
+}
+
+.price-1,
+.price-2,
+.price-3 {
+  padding: 0.5rem;
+  background-image: linear-gradient(to right, #ab2b1c, #cd3523);
+  background-color: #e4e4e1;
+  border-radius: 5px;
+  margin: 0.5rem;
+  transition: all 0.8s ease;
+}
+
+.price-1:hover,
+.price-2:hover,
+.price-3:hover {
+  transform: translateY(-8%);
 }
 
 .price-1 {
@@ -657,6 +673,7 @@ blockquote > footer {
   justify-content: center;
   font-family: "Dancing Script", cursive;
   font-size: 1.11rem;
+  color: #fff;
 }
 
 .price-box > p:nth-of-type(1) {
@@ -704,7 +721,14 @@ blockquote > footer {
 }
 
 /* CONTACT SECTION */
-
+.wrapped {
+  /* background-image: linear-gradient(
+    -225deg,
+    #dfffcd 0%,
+    #90f9c4 48%,
+    #39f3bb 100%
+  ); */
+}
 .contact-container {
   width: 100%;
   height: auto;
