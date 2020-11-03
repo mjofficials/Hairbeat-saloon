@@ -200,10 +200,19 @@ document.getElementById("submit-btn").addEventListener('click', function validat
     } else {
         var regex = /^\d{10}$/;
         if (regex.test(mobile) === false) {
-            printError("mobileErr", "Please enter a valid 10 digit mobile number");
+            printError("mobileErr", "Please enter a valid mobile number");
         } else {
             printError("mobileErr", "");
             mobileErr = false;
         }
     }
+
+    var dataPreview = `You've entered these details:
+    Name: ${name}
+    Email: ${email}
+    Mobile-number: ${mobile}
+    Free-time: ${freetime}
+    Service: ${services}`
+
+    alert(dataPreview);
 })
